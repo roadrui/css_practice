@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--导航条的制作  -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<link href="resource/bootstrap.min.css" rel="stylesheet"> 
+<style>
+	/*为了 保证浏览器的兼容性  每当加入新的标签之后，都要对padding和margin进行重置  */
+	body,div,ul,{
+		padding:0; 
+		margin:0;
+	}
+	.navmy {
+		width:960px;
+		height:35px;
+		background:#CCC;
+		margin:0 auto;
+		margin-top:30px;
+	}
+	.navmy ul {
+		width:960px;
+		height:35px;
+	}
+	.navmy ul li {
+		list-style:none;
+		float:left;
+	
+		height:35px;
+		line-height:35px; /*文字在垂直方向上居中 */
+		text-align:center;/*水平居中*/
+	}
+	
+
+	.navmy ul li a {
+		padding:0 10px;
+	    font-size:12px;
+		color:#333; 
+		text-decoration:none;
+		height:35px;
+		display:block;
+	/* 	background-color: blue; */
+		float:left;
+	}
+	.navmy ul li a:hover {
+		color:green; 
+		text-decoration:underline;
+		background-color:#000;
+	}
+	
+	#navbar {
+		background-color: #222;
+		margin:0 auto;
+	}
+	
+	
+	
+</style>
+<body>
+	<!--自己制作的导航条  -->
+	<div class = "navmy">
+		<ul>
+	        <li><a href="#">W3Cfuns</a></li>
+	        <li><a href="#">厘米学院</a></li>
+	        <li><a href="#">培训课程</a></li>
+	        <li><a href="#">我要充电</a></li>
+	        <li><a href="#">前端职业生涯</a></li>
+	        <li><a href="#">课程答疑</a></li>
+    	</ul>
+	</div>
+	
+	<!--bootstrap提供的导航条  -->
+	<div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="#">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+       </div>
+	
+</body>
+</html>
